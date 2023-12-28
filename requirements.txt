@@ -1,0 +1,12 @@
+# este é um arquivo de requisitos para um projeto Python
+click==8.1.7
+markdown-it-py==3.0.0
+mdurl==0.1.2
+pip==23.3.2
+Pygments==2.17.2
+python==3.8.0
+rich==13.7.0
+rich-menu==0.1.2
+setuptools==65.5.0
+
+# você pode instalar as dependências no seguinte comando `pip install -r requirements.txt`
