@@ -7,14 +7,14 @@ First you need to select the symbol. The first player seletcs and the second pla
 
 After that, it's time to make a move. The defaults are 'number+letter' to access the board coordinates. It works with both lowercase and uppercase letters and spaces between them, but it does not work if the pattern is 'letter+number'. Another thing is that the board only updates when the player enters a correct coordinate, otherwise a printout appears on the terminal of what the user did wrong.
 
-<img src="/assets/gif-move.gif">
+<img src="/assets/gif-moves.gif">
 
 At the end of the game there are three possible outcomes: player "X" wins, player "O" wins and draws, or in good Portuguese ("dar velha"). When you reach any of these results, you can choose to leave the game, or play another game.
 ## Nexts improvements:
 - It is my wish to implement a version with the minimax algorithm in which it will be possible for a player to play against the "computer". 
 - Also, at the end of the game, to add a standard action of starting a new game just by pressing "enter" on the keyboard.
 ## How to install:
-- Install Git: If you don't have Git installed yet, you can download and install it from the official Git website.
+- Install Git: if you don't have Git installed yet, you can download and install it from the official Git website.
 - Open the terminal and navigate to the directory where you want to clone the repository. Then, execute the following command to clone the repository: `git@github.com:me15degrees/tictactoe-for-terminal.git`. Make sure to replace username and repository with the correct values.
 - Now, navigate to the cloned repository directory and create a virtual environment. It's necessary for the requirements that isn't global. In the terminal, you can use the following command: `cd tictactoe-for-terminal` 
 `python -m venv venv`. This last command creates a virtual environment named "venv" in your project directory called tictactoe-for-terminal.
