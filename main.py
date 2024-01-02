@@ -81,31 +81,36 @@ def get_input(board):
                 "invalid input. please enter a valid coordinate (e.g., 2A): "
             )
         except KeyboardInterrupt:
+            print("\nexiting game...")
             sys.exit()
 
 
 def new_board(turn: callable, board, player_1, player_2, letters):
     move = 0
     while True:
-        print_board(board, letters)
-        print(
-            f"\nPlayer 1 ({player_1}):" if not move % 2 else f"\nPlayer 2 ({player_2}):"
-        )
-
-        line, column = get_input(board)
-
-        board[line][column] = turn(player_1, player_2, move)
-        move += 1
-
-        if check_winner(board, turn(player_1, player_2, move - 1)):
+        try:
             print_board(board, letters)
-            print(f"\nplayer {turn(player_1, player_2, move - 1)} won!\n")
-            break
+            print(
+                f"\nPlayer 1 ({player_1}):" if not move % 2 else f"\nPlayer 2 ({player_2}):"
+            )
 
-        if move == 9:
-            print_board(board, letters)
-            print("\nit's a draw!\n")
-            break
+            line, column = get_input(board)
+
+            board[line][column] = turn(player_1, player_2, move)
+            move += 1
+
+            if check_winner(board, turn(player_1, player_2, move - 1)):
+                print_board(board, letters)
+                print(f"\nplayer {turn(player_1, player_2, move - 1)} won!\n")
+                break
+
+            if move == 9:
+                print_board(board, letters)
+                print("\nit's a draw!\n")
+                break
+        except KeyboardInterrupt:
+            print("\nexiting game...")
+            sys.exit()
 
 
 def game():
