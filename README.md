@@ -7,7 +7,7 @@ First you need to select the symbol. The first player seletcs and the second pla
 
 After that, it's time to make a move. The defaults are 'number+letter' to access the board coordinates. It works with both lowercase and uppercase letters and spaces between them, but it does not work if the pattern is 'letter+number'. Another thing is that the board only updates when the player enters a correct coordinate, otherwise a printout appears on the terminal of what the user did wrong.
 
-<img src="/assets/gif-move">
+<img src="/assets/gif-move.gif">
 
 At the end of the game there are three possible outcomes: player "X" wins, player "O" wins and draws, or in good Portuguese ("dar velha"). When you reach any of these results, you can choose to leave the game, or play another game.
 ## Nexts improvements:
