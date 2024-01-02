@@ -14,7 +14,7 @@ At the end of the game there are three possible outcomes: player "X" wins, playe
 - It is my wish to implement a version with the minimax algorithm in which it will be possible for a player to play against the "computer". 
 - Also, at the end of the game, to add a standard action of starting a new game just by pressing "enter" on the keyboard.
 ## How to install:
-- Install Git: if you don't have Git installed yet, you can download and install it from the official Git website.
+- Install Git: if you don't have Git installed yet, you can download and install it from the <a href=https://git-scm.com/ >official Git website</a>.
 - Open the terminal and navigate to the directory where you want to clone the repository. Then, execute the following command to clone the repository: `git@github.com:me15degrees/tictactoe-for-terminal.git`. Make sure to replace username and repository with the correct values.
 - Now, navigate to the cloned repository directory and create a virtual environment. It's necessary for the requirements that isn't global. In the terminal, you can use the following command: `cd tictactoe-for-terminal` 
 `python -m venv venv`. This last command creates a virtual environment named "venv" in your project directory called tictactoe-for-terminal.
